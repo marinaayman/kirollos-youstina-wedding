@@ -1,0 +1,252 @@
+/* Wedding Countdown Styles */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    overflow-x: hidden;
+}
+
+body.arabic {
+    direction: rtl;
+    font-family: 'Cairo', 'Playfair Display', serif;
+}
+
+.wedding-container {
+    min-height: 100vh;
+}
+
+/* Language Toggle */
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-toggle button {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #667eea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.language-toggle button:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+    background-size: cover;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+}
+
+.couple-names {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: #667eea;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wedding-date {
+    font-size: 1.5rem;
+    color: #764ba2;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.venue {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+}
+/* Couple Photo Styles */
+.couple-photo-container {
+    margin-bottom: 30px;
+}
+
+.couple-main-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.couple-main-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+/* Section Spacing */
+.hero-section {
+    margin-bottom: 40px;
+}
+
+/* Countdown Section */
+.countdown-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: white;
+}
+
+.countdown-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 50px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.time-unit {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 120px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.time-unit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+}
+
+.time-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.time-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Arabic Invitation Section */
+.invitation-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.invitation-card {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    direction: rtl;
+    font-family: 'Amiri', 'Times New Roman', serif;
+}
+
+.invitation-title {
+    font-size: 2.4rem;
+    color: #ea6666;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.invitation-details h4 {
+    font-size: 2.5rem;
+    color: #07050a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.invite {
+    font-size: 2rem;
+    color: #07050a;
+    margin: 30px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-details p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+.invitation-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1e2e;
+}
+
+.invitation-footer p {
+    font-size: 1.4rem;
+    color: #0e0a11;
+    font-weight: bold;
+    font-style: italic;
+}
+/* Family Signature Section */
+.signature-section {
+    padding: 40px 20px;
+    background: rgba(212, 175, 140, 0.3);
+    text-align: center;
+}
+
+.signature-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.family-signature {
+    font-size: 1.3rem;
+    color: #0e0b08;
+    margin-bottom: 10px;
+    font-weight: bold;
+    direction: rtl;
+    font-family: 'Amiri', serif;
+}
+
+.family-signature-en {
+    font-size: 1.1rem;
+    color: #0e0b08;
+    font-style: italic;
+}
