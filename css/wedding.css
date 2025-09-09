@@ -283,24 +283,6 @@ body.arabic {
         font-size: 12px;
     }
     
-    .hero-content {
-        padding: 30px 20px;
-        margin: 10px;
-    }
-    
-    .couple-names {
-        font-size: 2.5rem;
-    }
-
-    .venue {
-        font-size: 1rem;
-    }
-    
-    .couple-main-photo {
-        width: 200px;
-        height: 200px;
-    }
-    
     .countdown-title {
         font-size: 2rem;
     }
@@ -336,30 +318,6 @@ body.arabic {
 }
 
 @media screen and (max-width: 480px) {
-    .hero-section {
-        padding: 15px;
-    }
-    
-    .hero-content {
-        padding: 25px 15px;
-    }
-    
-    .couple-names {
-        font-size: 2.2rem;
-    }
-    
-    .wedding-date {
-        font-size: 1rem;
-    }
-    
-    .venue {
-        font-size: 0.95rem;
-    }
-    
-    .couple-main-photo {
-        width: 180px;
-        height: 180px;
-    }
     
     .countdown-section {
         padding: 40px 15px;
@@ -449,17 +407,6 @@ body.arabic {
 
 /* Landscape orientation on mobile */
 @media screen and (max-height: 500px) and (orientation: landscape) {
-    .hero-section {
-        min-height: auto;
-        padding: 15px;
-    }
-    
-    .couple-main-photo {
-        width: 250px;
-        height: 250px;
-        max-height: 60vh;
-    }
-    
     .countdown-section {
         padding: 40px 20px;
     }
