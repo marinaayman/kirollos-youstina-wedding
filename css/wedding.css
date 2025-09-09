@@ -51,71 +51,29 @@ body.arabic {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Hero Section */
-.hero-section {
-    min-height: 100vh;
+/* Photo Section */
+.photo-section {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
-    background-size: cover;
-    position: relative;
-    padding: 20px;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.hero-content {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 40px 30px;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
-    width: 100%;
-    backdrop-filter: blur(10px);
-}
-
-.couple-names {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    color: #667eea;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    line-height: 1.2;
-}
-
-.wedding-date {
-    font-size: 1.3rem;
-    color: #764ba2;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.venue {
-    font-size: 1.1rem;
-    color: #666;
-    font-style: italic;
-    line-height: 1.4;
-}
-
-/* Couple Photo Styles */
-.couple-photo-container {
-    margin-bottom: 30px;
-}
-
-.couple-main-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+.couple-photo {
+    width: 500px;
+    height: 400px;
     object-fit: cover;
-    border: 5px solid #667eea;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 8px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     max-width: 90%;
 }
 
-.couple-main-photo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+.couple-photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
 }
 
 /* Countdown Section */
