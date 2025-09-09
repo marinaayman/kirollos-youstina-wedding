@@ -12,6 +12,19 @@
     <link rel="stylesheet" href="css/wedding.css" />
     <link rel="stylesheet" href="WeddingCountdown.styles0dab.css?v=zpHl32EBBAfx4PCnfDRuegMusslCT-G18gY_533Pzj8" />
 </head>
+<script>
+  // Reveal on scroll
+  const sections = document.querySelectorAll('.wedding-container section');
+  window.addEventListener('scroll', () => {
+      const trigger = window.innerHeight * 0.8;
+      sections.forEach(sec => {
+          if (sec.getBoundingClientRect().top < trigger) {
+              sec.classList.add('visible');
+          }
+      });
+  });
+</script>
+
 <body>
     <header b-2q0wq2ggdu>
         <nav b-2q0wq2ggdu class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -48,7 +61,7 @@
     <div class="photo-container">
         <img src="images/couple.jpg" alt="Kirollos and Youstina" class="couple-photo">
         <div class="photo-info">
-            <p class="wedding-venue" data-en="Saint Virgin Mary Coptic Orthodox Church, Sadat City" data-ar="كنيسة السيدة العذراء، مدينة السادات، المنوفية">Saint Virgin Mary Coptic Orthodox Church, Sadat City</p>
+            <p class="wedding-venue" data-en="Saint Mary Coptic Orthodox Church, Sadat City" data-ar="كنيسة السيدة العذراء، مدينة السادات، المنوفية">Saint Mary Coptic Orthodox Church, Sadat City</p>
         </div>
     </div>
 </section>

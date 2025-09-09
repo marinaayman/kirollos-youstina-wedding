@@ -463,3 +463,51 @@ body.arabic {
         padding: 40px 20px;
     }
 }
+
+/* Navbar Custom */
+.navbar {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border: none !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+    color: #444 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #667eea !important;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ffd6d6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Section Animations */
+.wedding-container section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.wedding-container section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
