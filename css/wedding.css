@@ -1,5 +1,5 @@
 /* Wedding Countdown Styles */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -12,6 +12,7 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #333;
     overflow-x: hidden;
+    margin-bottom: 0 !important; /* Override the site2e3a.css margin-bottom */
 }
 
 body.arabic {
@@ -41,6 +42,7 @@ body.arabic {
     color: #667eea;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    font-size: 14px;
 }
 
 .language-toggle button:hover {
@@ -51,7 +53,7 @@ body.arabic {
 
 /* Hero Section */
 .hero-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,79 +61,82 @@ body.arabic {
     background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
     background-size: cover;
     position: relative;
+    padding: 20px;
 }
 
 .hero-content {
     background: rgba(255, 255, 255, 0.95);
-    padding: 60px;
+    padding: 40px 30px;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     max-width: 600px;
+    width: 100%;
     backdrop-filter: blur(10px);
 }
 
 .couple-names {
     font-family: 'Dancing Script', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #667eea;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.2;
 }
 
 .wedding-date {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #764ba2;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
 .venue {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #666;
     font-style: italic;
+    line-height: 1.4;
 }
+
 /* Couple Photo Styles */
 .couple-photo-container {
     margin-bottom: 30px;
 }
 
 .couple-main-photo {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #667eea;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+    max-width: 90%;
 }
 
 .couple-main-photo:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
-/* Section Spacing */
-.hero-section {
-    margin-bottom: 40px;
-}
 
 /* Countdown Section */
 .countdown-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
     background: white;
 }
 
 .countdown-title {
     font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #667eea;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    line-height: 1.2;
 }
 
 .countdown-timer {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
@@ -140,12 +145,14 @@ body.arabic {
 .time-unit {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 30px;
-    border-radius: 20px;
-    min-width: 120px;
+    padding: 20px 15px;
+    border-radius: 15px;
+    min-width: 100px;
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
     transform: translateY(0);
     transition: all 0.3s ease;
+    flex: 1;
+    max-width: 120px;
 }
 
 .time-unit:hover {
@@ -154,76 +161,59 @@ body.arabic {
 }
 
 .time-number {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    line-height: 1;
 }
 
 .time-label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* Arabic Invitation Section */
-.invitation-section {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-}
-
-.invitation-card {
-    max-width: 600px;
-    margin: 0 auto;
+/* Wishes Section */
+.wishes-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9ff, #e8ecff);
     text-align: center;
-    background: rgba(255, 255, 255, 0.95);
-    color: #333;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    direction: rtl;
-    font-family: 'Amiri', 'Times New Roman', serif;
 }
 
-.invitation-title {
-    font-size: 2.4rem;
-    color: #ea6666;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-.invitation-details h4 {
+.section-title {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
-    color: #07050a;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.wishes-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wish-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.wish-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
-.invite {
-    font-size: 2rem;
-    color: #07050a;
-    margin: 30px 0;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.invitation-details p {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    line-height: 1.8;
-}
-.invitation-footer {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 2px solid #1a1e2e;
-}
-
-.invitation-footer p {
-    font-size: 1.4rem;
-    color: #0e0a11;
-    font-weight: bold;
+.signature {
     font-style: italic;
+    color: #764ba2;
+    font-weight: 600;
+    font-size: 1rem;
 }
+
 /* Family Signature Section */
 .signature-section {
     padding: 40px 20px;
@@ -249,4 +239,202 @@ body.arabic {
     font-size: 1.1rem;
     color: #0e0b08;
     font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .language-toggle {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .language-toggle button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .hero-content {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    
+    .couple-names {
+        font-size: 2.5rem;
+    }
+    
+    .wedding-date {
+        font-size: 1.1rem;
+    }
+    
+    .venue {
+        font-size: 1rem;
+    }
+    
+    .couple-main-photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .countdown-title {
+        font-size: 2rem;
+    }
+    
+    .countdown-timer {
+        gap: 15px;
+    }
+    
+    .time-unit {
+        padding: 15px 10px;
+        min-width: 80px;
+    }
+    
+    .time-number {
+        font-size: 1.8rem;
+    }
+    
+    .time-label {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .wish-card {
+        padding: 25px 20px;
+    }
+    
+    .wish-card p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        padding: 15px;
+    }
+    
+    .hero-content {
+        padding: 25px 15px;
+    }
+    
+    .couple-names {
+        font-size: 2.2rem;
+    }
+    
+    .wedding-date {
+        font-size: 1rem;
+    }
+    
+    .venue {
+        font-size: 0.95rem;
+    }
+    
+    .couple-main-photo {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .countdown-section {
+        padding: 40px 15px;
+    }
+    
+    .countdown-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .countdown-timer {
+        gap: 10px;
+    }
+    
+    .time-unit {
+        padding: 12px 8px;
+        min-width: 70px;
+        border-radius: 12px;
+    }
+    
+    .time-number {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    
+    .time-label {
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .wishes-section {
+        padding: 40px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .wish-card {
+        padding: 20px 15px;
+    }
+    
+    .wish-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .signature {
+        font-size: 0.9rem;
+    }
+    
+    .family-signature {
+        font-size: 1.1rem;
+    }
+    
+    .family-signature-en {
+        font-size: 1rem;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 360px) {
+    .countdown-timer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .time-unit {
+        width: 100%;
+        max-width: 200px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .time-number {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .time-label {
+        font-size: 1rem;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: 15px;
+    }
+    
+    .couple-main-photo {
+        width: 250px;
+        height: 250px;
+        max-height: 60vh;
+    }
+    
+    .countdown-section {
+        padding: 40px 20px;
+    }
 }
