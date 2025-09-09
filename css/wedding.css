@@ -51,7 +51,7 @@ body.arabic {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Photo Section */
+/* Just Photo Section */
 .photo-section {
     display: flex;
     justify-content: center;
@@ -60,15 +60,22 @@ body.arabic {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+.photo-container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
 .couple-photo {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
     border: 8px solid rgba(255, 255, 255, 0.9);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
-    max-width: 90%;
+    margin-bottom: 30px;
 }
 
 .couple-photo:hover {
@@ -76,6 +83,87 @@ body.arabic {
     box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
 }
 
+.photo-info {
+    color: white;
+    text-align: center;
+}
+
+.wedding-day {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wedding-venue {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    line-height: 1.4;
+}
+
+/* Mobile Responsiveness for Photo Section */
+@media screen and (max-width: 768px) {
+    .photo-section {
+        padding: 40px 15px;
+    }
+    
+    .couple-photo {
+        max-width: 400px;
+        height: 320px;
+        border-width: 6px;
+        border-radius: 18px;
+        margin-bottom: 25px;
+    }
+    
+    .wedding-day {
+        font-size: 1.3rem;
+    }
+    
+    .wedding-venue {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .photo-section {
+        padding: 30px 10px;
+    }
+    
+    .couple-photo {
+        max-width: 350px;
+        height: 280px;
+        border-width: 5px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .wedding-day {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    
+    .wedding-venue {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .couple-photo {
+        max-width: 320px;
+        height: 250px;
+        border-radius: 12px;
+    }
+    
+    .wedding-day {
+        font-size: 1.1rem;
+    }
+    
+    .wedding-venue {
+        font-size: 0.95rem;
+    }
+}
 /* Countdown Section */
 .countdown-section {
     padding: 60px 20px;
