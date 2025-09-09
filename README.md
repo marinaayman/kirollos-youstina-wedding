@@ -1,3 +1,3 @@
 # Kirollos-Youstina-Wedding
 
-![Kirollos and Youstina Wedding](https://github.com/marinaayman/kirollos-youstina-wedding/tree/master/images)
+![Kirollos and Youstina Wedding](images/couple.jpg)
